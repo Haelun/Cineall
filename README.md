@@ -43,7 +43,11 @@ cineall/
 ```
 
 For CineAll, the tech stack includes:
+
 Frontend → HTML, CSS, JavaScript
+
 Backend → PHP
+
 Database → MySQL
+
 Tools & Hosting → GitHub
