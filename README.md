@@ -15,7 +15,6 @@ CineAll is an online streaming platform that allows users to watch movies and TV
 - Personal watchlist management
 - Platform subscription tracking
 - Compare streaming service coverage
-- Cinematic, cinema-inspired design
 
 ## SiteMap
 ```
