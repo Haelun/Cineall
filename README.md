@@ -27,25 +27,18 @@ HOME (Discover)
 │ │ ├─ Watch on Platform (External)
 │ │ └─ Related Movies → MOVIE DETAIL
 │ └─ Apply Filters (Genre/Platform)
-│
 ├─GENRES
 │ └─ Select Genre → MOVIE DETAIL
-│
 ├─COMPARE
 │ └─ Sample Movie → MOVIE DETAIL
-│
 ├─RECOMMENDATIONS (For You)
 │ └─ (Future: Recommended Movies → MOVIE DETAIL)
-│
 ├─ WATCHLIST
 │ ├─ MOVIE DETAIL
 │ └─ Remove from Watchlist
-│
 └─ ACCOUNT
 └─ Toggle Platform Subscriptions
 ````
-
-
 
 ## Project Structure
 ```
