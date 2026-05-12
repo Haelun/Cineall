@@ -9,6 +9,7 @@ Group's Member:
 3. Nyoman Adhi Dhira Purnomo (F1D02410132)  -- Database Developer and Frontend Developer
 
 ## Project Structure
+```
 cineall/
 ├── config/                 # Configuration files
 │   ├── config.php          # Application configuration
@@ -39,6 +40,7 @@ cineall/
 │   └── images/             # Images
 ├── index.php               # Main application entry
 └── README.md               # This file
+```
 
 For CineAll, the tech stack includes:
 Frontend → HTML, CSS, JavaScript
