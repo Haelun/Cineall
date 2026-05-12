@@ -6,7 +6,7 @@ CineAll is an online streaming platform that allows users to watch movies and TV
 ## Group's Member:
 1. LALU AHMAD FAIZ HAQIQI (F1D02410117)     -- Content Manager and UI/UX Developer
 2. HAIDAR WAHYU YASARI (F1D02410114)        -- Project Manajer and Backend Developer
-3. Nyoman Adhi Dhira Purnomo (F1D02410132)  -- Database Developer and Frontend Developer
+3. NYOMAN ADHI DHIRA PURNOMO (F1D02410132)  -- Database Developer and Frontend Developer
 
 ## Features
 - 🎬 Browse and search movies across multiple streaming services
