@@ -41,6 +41,7 @@ HOME (Discover)
 
 ## Project Structure
 ```
+User
 cineall/
 ├── config/                 # Configuration files
 │   ├── config.php          # Application configuration
