@@ -3,10 +3,22 @@ Web project for Web Programming
 
 CineAll is an online streaming platform that allows users to watch movies and TV shows easily in one place. The website is designed with a user-friendly interface, providing fast access to entertainment content across various genres. CineAll aims to deliver a convenient, accessible, and enjoyable streaming experience for users anytime and anywhere.
 
-Group's Member:
+## Group's Member:
 1. LALU AHMAD FAIZ HAQIQI (F1D02410117)     -- Content Manager and UI/UX Developer
 2. HAIDAR WAHYU YASARI (F1D02410114)        -- Project Manajer and Backend Developer
 3. Nyoman Adhi Dhira Purnomo (F1D02410132)  -- Database Developer and Frontend Developer
+
+## Features
+- 🎬 Browse and search movies across multiple streaming services
+- 🎭 Filter by genre, platform, year, and ratings
+- ⭐ View detailed movie information with critic and audience scores
+- 📝 Personal watchlist management
+- 🔗 Platform subscription tracking
+- 📊 Compare streaming service coverage
+- 🎨 Cinematic, cinema-inspired design
+
+## SiteMap
+
 
 ## Project Structure
 ```
@@ -42,12 +54,8 @@ cineall/
 └── README.md               # This file
 ```
 
-For CineAll, the tech stack includes:
-
-Frontend → HTML, CSS, JavaScript
-
-Backend → PHP
-
-Database → MySQL
-
-Tools & Hosting → GitHub
+## TechStack
+- **Frontend**: HTML5, CSS3 (CSS Variables), Vanilla JavaScript (ES6+)
+- **Backend**: PHP 7.4+
+- **Database**: MySQL 5.7+ / MariaDB 10.3+
+- **Architecture**: MVC-inspired, RESTful API
