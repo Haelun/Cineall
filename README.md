@@ -9,15 +9,42 @@ CineAll is an online streaming platform that allows users to watch movies and TV
 3. NYOMAN ADHI DHIRA PURNOMO (F1D02410132)  -- Database Developer and Frontend Developer
 
 ## Features
-- 🎬 Browse and search movies across multiple streaming services
-- 🎭 Filter by genre, platform, year, and ratings
-- ⭐ View detailed movie information with critic and audience scores
-- 📝 Personal watchlist management
-- 🔗 Platform subscription tracking
-- 📊 Compare streaming service coverage
-- 🎨 Cinematic, cinema-inspired design
+- Browse and search movies across multiple streaming services
+- Filter by genre, platform, year, and ratings
+- View detailed movie information with critic and audience scores
+- Personal watchlist management
+- Platform subscription tracking
+- Compare streaming service coverage
+- Cinematic, cinema-inspired design
 
 ## SiteMap
+```
+User
+HOME (Discover)
+├─SEARCH/BROWSE
+│ ├─ MOVIE DETAIL
+│ │ ├─ Add to Watchlist
+│ │ ├─ Watch on Platform (External)
+│ │ └─ Related Movies → MOVIE DETAIL
+│ └─ Apply Filters (Genre/Platform)
+│
+├─GENRES
+│ └─ Select Genre → MOVIE DETAIL
+│
+├─COMPARE
+│ └─ Sample Movie → MOVIE DETAIL
+│
+├─RECOMMENDATIONS (For You)
+│ └─ (Future: Recommended Movies → MOVIE DETAIL)
+│
+├─ WATCHLIST
+│ ├─ MOVIE DETAIL
+│ └─ Remove from Watchlist
+│
+└─ ACCOUNT
+└─ Toggle Platform Subscriptions
+````
+
 
 
 ## Project Structure
