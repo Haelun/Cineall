@@ -1,0 +1,347 @@
+/**
+ * ============================================================================
+ * LAYOUT STYLES
+ * ============================================================================
+ * Grid layouts, sidebar, header, main content areas
+ * EASY TO EDIT: Adjust widths, spacing, and layout structure here
+ */
+
+/* ─── Main App Container ─────────────────────────────────────────────────── */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--abg);
+  color: var(--afg);
+  display: grid;
+  grid-template-columns: 240px 1fr;  /* EDIT: Change sidebar width here */
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────────────────── */
+.sidebar {
+  border-right: 1px solid var(--aborder);
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--abg);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid var(--aborder);
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.sidebar-badge {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-left: 8px;
+  padding: 3px 6px;
+  background: oklch(0.55 0.13 280);
+  color: var(--abg);
+  border-radius: 2px;
+}
+
+.sidebar-subtitle {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--amuted);
+  margin-top: 6px;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 0;
+}
+
+.nav-group {
+  margin-bottom: 12px;
+}
+
+.nav-group-label {
+  padding: 8px 20px 4px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--amuted);
+}
+
+.nav-item {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 20px;
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  color: var(--amuted);
+  font-size: 14px;
+  transition: all var(--transition-fast);
+}
+
+.nav-item:hover {
+  background: var(--arow);
+  color: var(--afg);
+}
+
+.nav-item.active {
+  background: var(--arow);
+  border-left-color: var(--accent);
+  color: var(--afg);
+}
+
+.nav-item .glyph {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.nav-item.active .glyph {
+  color: var(--accent);
+}
+
+/* Sidebar User Info */
+.sidebar-user {
+  padding: 16px 20px;
+  border-top: 1px solid var(--aborder);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: oklch(0.50 0.12 280);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-email {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-title {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--amuted);
+}
+
+/* ─── Main Content Area ──────────────────────────────────────────────────── */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--abg);
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--aborder);
+  background: var(--abg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--amuted);
+}
+
+.header-breadcrumb .current {
+  color: var(--afg);
+}
+
+.header-spacer {
+  flex: 1;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--aborder);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--amuted);
+  min-width: 240px;
+}
+
+/* ─── Page Content ───────────────────────────────────────────────────────── */
+.page-content {
+  padding: 32px;
+  flex: 1;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-kicker {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.page-title {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  color: var(--afg);
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-style: italic;
+  font-size: 15px;
+  color: var(--amuted);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+/* ─── Grid Layouts ───────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Auto-fit grid (responsive) */
+.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* KPI Grid */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+/* ─── Flexbox Utilities ──────────────────────────────────────────────────── */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.flex-gap-md {
+  gap: var(--spacing-md);
+}
+
+.flex-gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* ─── Curator Layout ─────────────────────────────────────────────────────── */
+.curator-workspace {
+  width: 100%;
+  min-height: 100%;
+  background: var(--cbg);
+  color: var(--cfg);
+  display: flex;
+  flex-direction: column;
+}
+
+.curator-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;  /* EDIT: Library sidebar width */
+  flex: 1;
+  min-height: 0;
+}
+
+/* Film Library Sidebar */
+.film-library {
+  border-right: 1px solid var(--cborder);
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 53px);
+  overflow: hidden;
+  background: var(--cbg);
+}
+
+/* Composition Area */
+.composition-area {
+  padding: 28px 32px;
+  overflow-y: auto;
+  background: var(--cbg);
+}
